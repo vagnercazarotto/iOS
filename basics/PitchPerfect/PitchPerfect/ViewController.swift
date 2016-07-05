@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var recordingLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func recordAudio(sender: AnyObject) {
+        print("Button record pressed")
+        recordingLabel.text = "Recording in progress"
+    }
+    
 
+    @IBAction func stopRecording(sender: AnyObject) {
+        print("Stop recording pressed")
+        recordingLabel.text = "Tap to Record"
+    }
+    
+    
 }
 
