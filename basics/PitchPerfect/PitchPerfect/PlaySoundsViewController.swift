@@ -11,6 +11,9 @@ import UIKit
 class PlaySoundsViewController: UIViewController {
     var recordedAudioURL: NSURL!
     
+    // Add outlet buttons
+    @IBOutlet weak var snailsButton: UIButton!	
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
