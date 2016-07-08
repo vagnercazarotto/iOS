@@ -44,17 +44,19 @@ class ViewController: UIViewController {
 
 
 
+
 //: ### Declaring optionals with Question Marks
 // Example 1
 var z: Int?
 var string: String
 string = "123"
 z = Int(string)
-//z * 2
+
+z! * 2
 
 // Example 2
 class AnotherViewController: UIViewController {
-    //var anotherButton: UIButton
+    var anotherButton: UIButton?
 }
 
 
@@ -108,11 +110,38 @@ if let intValue = zee {
     "No value"
 }
 
+
+// pause
+let variable: Int? = nil
+let a: Int? = .None
+let d: Int? = 1
+a != nil
+d != nil
+a == nil
+
+let dd:Optional<Int> = 1
+dd != nil
+
+let ddd = Optional(1)
+ddd != nil
+
+d == Optional<Int>.None
+
+nil < 0
+nil > 0
+
+Optional<Int>.None < 0
+
+
+
 //Example 2: Another example with UIImageView
 
 var imageView = UIImageView()
 
 imageView.image = UIImage(named:"puppy_in_box")
+let imageSize = imageView.image!.size
+
+
 if let image = imageView.image {
     let size = image.size
 } else {
