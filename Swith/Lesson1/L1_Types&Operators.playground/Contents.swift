@@ -7,15 +7,18 @@ import Foundation
 class LightSwitch {
     
     var on: Bool = true
+    var dimmer: Double = 1.5
 }
 
 var livingRoomSwitch = LightSwitch()
 livingRoomSwitch.on
+livingRoomSwitch.dimmer
 //: ### Example 2: Strings and Characters
-var dollarSign: Character = "$"
-var myFirstSwiftString: String = "mo' money"
-var mySecondSwiftString: String = "mo' problems"
-var concatenatedString:String = myFirstSwiftString + ", " + mySecondSwiftString
+var dollarSign = "$"
+var myFirstSwiftString = "mo' money"
+var mySecondSwiftString = "mo' problems"
+var concatenatedString = myFirstSwiftString + ", " + mySecondSwiftString
+concatenatedString.dynamicType
 
 //: ### Stay tuned for more on Optionals and Tuples in the upcoming lessons!
 
@@ -24,7 +27,7 @@ var concatenatedString:String = myFirstSwiftString + ", " + mySecondSwiftString
 //: ### Example 1 - Comparison operators
 let ticketPrice = 7.5
 let allowance = 10.0
-var iceCreamPrice = 3.0
+var iceCreamPrice = 4.0
 
 var pic = UIImage(named:"Chloe.png")!
 
@@ -71,14 +74,20 @@ answer2
 question ? answer1 : answer2
 */
 // This statement ...
-//if hungry {
-//    print("Let's eat!")
-//} else {
-//    print("Let's wait.")
-//}
+if hungry {
+    print("Let's eat!")
+} else {
+    print("Let's wait.")
+}
+
 
 // Could be rewritten like so ...
-hungry ? print("Let's eat!") : print("Let's wait.")
+//hungry ? print("Let's eat!") : print("Let's wait.")
+
+hungry = true
+
+hungry ? print("Let's eat!") : print("Nevermind!")
+
 
 // This statement...
 //if hungry || thereIsPie {
@@ -93,7 +102,7 @@ hungry || thereIsPie ? print("Let's eat!") : print("Let's wait.")
 
 // Ternary statements can also be used as expressions.
 let sandwichPrice = 5.0
-var tax = true
+var tax = false
 var lunchPrice = sandwichPrice + (tax ? 0.50 : 0)
 
 //: ### Extra Example - Comparison operators

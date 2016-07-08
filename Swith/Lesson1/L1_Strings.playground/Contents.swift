@@ -5,12 +5,12 @@ import Foundation
 
 //: ## Defining Strings using string literals
 let myFirstString = "mo 💰"
-let mySecondString = "mo problems"
+let mySecondString = "mo  problems"
 
 //: ## String concatenation
 //let theTruth = myFirstString + ", " + mySecondString
 
-let theTruth = "💰 can't buy me 💖."
+let theTruth = "💰 ⍉ can't buy me 💖."
 
 let theBaseballTeamInAtlanta = "Atlanta Braves"
 var jamesFavoriteBaseballTeam = "Atlanta Braves"
@@ -42,12 +42,12 @@ doggyDiet = "\(dogName) eats 25lbs of dog food per month"
 //: ### String with variables and expression
 var lbsPerDay = 0.75
 var daysPerMonth:Double = 30.0
-doggyDiet = "\(dogName) eats ?lbs of dog food per month"
+doggyDiet = "\(dogName) eats lbs of dog food per month"
 
 var frankiePic = UIImage(named:"frankie.jpeg")!
 lbsPerDay = 0.25
 dogName = "Lil Frankie"
-doggyDiet = "\(dogName) eats ?lbs of dog food per month"
+doggyDiet = "\(dogName) eats \(lbsPerDay * daysPerMonth) lbs of dog food per month"
 //: ## A String isn't just a String
 
 //: ### Through the .characters property we can access an array of characters
@@ -56,6 +56,7 @@ for character in password.characters {
     if character == "e" {
         print("found an e!")
     } else {
+        print("don't found an e!")
     }
 }
 

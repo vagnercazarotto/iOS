@@ -22,6 +22,7 @@ let shoutString =  "HEY! DID YOU KNOW THAT THE SWIFT STRING CLASS COMES WITH LOT
 //: ### Exercise 3
 //: How many characters are in this string? 
 let howManyCharacters = "How much wood could a woodchuck chuck if a woodchuck could chuck wood?"
+let thisMany = howManyCharacters.characters.count
 //: ### Exercise 4
 //: How many times does the letter "g" or "G" appear in the following string? Use a for-in loop to find out!
 let gString = "Gary's giraffe gobbled gooseberries greedily"
