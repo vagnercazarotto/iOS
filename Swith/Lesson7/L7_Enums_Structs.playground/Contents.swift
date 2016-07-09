@@ -19,7 +19,7 @@ enum AmericanLeagueWest: String {
     case Rangers = "Arlington"    
 }
 
-var message = "I hope the A's stay in \(AmericanLeagueWest.As.rawValue)"
+var message = "I hope the A's stay in \(AmericanLeagueWest.Astros.rawValue)"
 
 //: Enums and switch statements go hand in hand.
 enum CaliforniaPark {
@@ -90,6 +90,10 @@ var frame = PictureFrame(width: 3, height: 5, thickness: 0.5)
 var frameForMom = frame
 frameForMom.width = 5
 frameForMom.height = 7
+frame.height
+frame.width
+frameForMom.width
+frameForMom.width
 
 //: Reference types create a new reference with every assignment, they are NOT copied.
 // What happens if we make pictureFrame a class?
@@ -117,43 +121,49 @@ var classyFrame = ClassyPictureFrame(width: 3, height: 5, thickness: 0.5)
 var classyFrameForMom = classyFrame
 classyFrameForMom.width = 5
 classyFrameForMom.height = 7
+classyFrame.width
+classyFrame.height
 
 //: ### Choose the right type for the job
 // enum, class, or struct? 
 // Uncomment each example one at a time as you guess the corresponding answer.
 
-// _____ Triangle {
-//    let angles = [30, 60, 90]
-//    let sides = [3,4,5]
-//}
+ struct Triangle {
+    let angles = [30, 60, 90]
+    let sides = [3,4,5]
+}
 
-//_____ UIImagePickerControllerSourceType : Int {    
-//    case PhotoLibrary
-//    case Camera
-//    case SavedPhotosAlbum
-//}
+enum UIImagePickerControllerSourceType : Int {
+    case PhotoLibrary
+    case Camera
+    case SavedPhotosAlbum
+}
 
-//_____ Name {
-//    var firstName: String
-//    var lastName: String
-//}
+UIImagePickerControllerSourceType.PhotoLibrary
 
-//_____ Subject {
-//    case Math
-//    case English
-//    case Spanish
-//    case Science
-//}
+struct Name {
+    var firstName: String
+    var lastName: String
+}
 
-//_____ Student {
-//    var grades = [97.0, 99.0, 98.0]
-//    let name = Name(firstName:"Grace", lastName:"Hopper")
-//    var favoriteSubject = Subject.Science
-//
-//    var gradePointAverage: Double {
-//        get {
-//            return (grades.reduce(0){$0 + $1})/Double (grades.count)
-//        }
-//    }
-//}
+enum Subject {
+    case Math
+    case English
+    case Spanish
+    case Science
+}
+
+
+
+class Student {
+    var grades = [97.0, 99.0, 98.0]
+    let name = Name(firstName:"Grace", lastName:"Hopper")
+    var favoriteSubject = Subject.Science
+
+    var gradePointAverage: Double {
+        get {
+            return (grades.reduce(0){$0 + $1})/Double (grades.count)
+        }
+    }
+}
 
