@@ -9,11 +9,23 @@ import UIKit
 //:Test out your discovery below by returning the last letter of the String, "bologna".
 var word = "bologna"
 
+var lastLetter = word.removeAtIndex(word.endIndex.predecessor())
+
 //: __Problem 2__
 //:
 //: Write a function called combineLastCharacters. It should take in an array of strings, collect the last character of each string and combine those characters to make a new string to return. Use the strategy you discovered in Problem 1 along with a for-in loop to write combineLastCharacters. Then try it on the nonsenseArray below.
 var nonsenseArray = ["bungalow", "buffalo", "indigo", "although", "Ontario", "albino", "%$&#!"]
 
+func combineLastCharacters(Arr:[String]) -> String {
+    var newWord = ""
+    for var word in Arr {
+        let lastChar = word.removeAtIndex(word.endIndex.predecessor())
+        newWord.append(lastChar)
+    }
+    return newWord
+}
+
+combineLastCharacters(nonsenseArray)
 //: __Problem 3__
 //:
 //: Imagine you are writing an app that keeps track of what you spend during the week. Prices of items purchased are entered into a "price" textfield. The "price" field should only allow numbers, no letters.
@@ -26,10 +38,31 @@ var nonsenseArray = ["bungalow", "buffalo", "indigo", "although", "Ontario", "al
 
 let digits = NSCharacterSet.decimalDigitCharacterSet()
 
+func digitsOnly(word: String) -> Bool {
+    for character in word.unicodeScalars {
+        if !digits.longCharacterIsMember(character.value) {
+            return false
+        }
+    }
+    return true
+}
+
 //: __Problem 4__
 //:
 //: Write a function that takes in an array of dirtyWord strings, removes all of the four-letter words, and returns a clean array.
 let dirtyWordsArray = ["phooey", "darn", "drat", "blurgh", "jupiters", "argh", "fudge"]
+
+func cleanUp(dirtyArray: [String]) -> [String]{
+    var cleanArray = [String]()
+    for word in dirtyArray {
+        if word.characters.count == 4 {
+        } else {
+            cleanArray.append(word)
+        }
+    }
+    return cleanArray
+}
+
 
 //: __Problem 5__
 //:
@@ -38,6 +71,14 @@ let dirtyWordsArray = ["phooey", "darn", "drat", "blurgh", "jupiters", "argh", "
 var movies:Dictionary<String,String> = [ "Boyhood":"Richard Linklater","Inception":"Christopher Nolan", "The Hurt Locker":"Kathryn Bigelow", "Selma":"Ava Du Vernay", "Interstellar":"Christopher Nolan"]
 
 class MovieArchive {
-
+    func filterByDirector(movies: Dictionary<String,String> , nameOfDirector: String) -> [String]{
+        var cleanArray = [String]()
+        for (movie,dir) in movies{
+            if dir == nameOfDirector{
+                cleanArray.append(movie)
+            }
+        }
+    return cleanArray
+    }
 }
 
