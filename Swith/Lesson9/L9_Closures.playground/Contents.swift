@@ -27,7 +27,7 @@ print(orderedBids)
 
 var birthYears = [2004, 2011, 2007, 2005, 2002]
 var youngestToOldest = birthYears.sort({ (year1: Int, year2: Int) -> Bool in
-    return year1 > year2
+    return year1 < year2
 })
 
 youngestToOldest
@@ -71,8 +71,8 @@ myFailingGrades
 
 // Example 2
 var soups = ["tomato", "hot and sour", "french onion", "vegetable"]
-var alphabeticalSoups = soups.sort({(soup1: String, soup2: String) -> Bool in
-    return soup2 > soup1
+var alphabeticalSoups = soups.sort({(soup1, soup2) in
+    soup2 > soup1
 })
 
 
