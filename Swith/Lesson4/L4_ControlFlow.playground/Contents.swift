@@ -16,10 +16,10 @@ for index in 0..<99 {
 //:     }
 
 //: ### Example 1
-//var demoString = "Swift enumeration is so fast!"
-//for character in demoString.characters {
-//    print(character)
-//}
+var demoString = "Swift enumeration is so fast!"
+for character in demoString.characters {
+    print(character)
+}
 
 //: ### Example 2
 let intArray = [7, 21, 25, 13, 1]
@@ -76,15 +76,15 @@ while beerVolume > 0 {
 //:    repeat {
 //:        statement
 //:    } while condition
+var time = 10
+repeat {
+    timer -= 1
+} while timer > 0
 
-//repeat {
-// --timer
-//} while timer > 0
-//
-//repeat {
-//    print("Cheers")
-//    beerVolume -= sip
-//} while beerVolume > 0
+repeat {
+    print("Cheers")
+    beerVolume -= sip
+} while beerVolume > 0
 
 //: ## IV. If-else statements
 
@@ -97,7 +97,7 @@ while beerVolume > 0 {
 //:    }
 
 //: ### Example 1
-var hungry = true
+var hungry = false
 if hungry {
     print("Let's eat!")
 } else {
@@ -105,7 +105,7 @@ if hungry {
 }
 
 //: ### Example 2
-var vegetarian = false
+var vegetarian = true
 
 if hungry && !vegetarian {
     print("Let's eat steak!")
@@ -125,7 +125,7 @@ if hungry || thereIsPie {
 //: ## V. Switch statements
 
 //: ### Example 1 - Here's an if-else statement that right now is a bit cumbersome.
-var birthYear = 1992
+var birthYear = 1991
 
 if birthYear == 1992 || birthYear == 1980 || birthYear == 1968 {
     print("You were born in the year of the monkey.")
@@ -161,7 +161,7 @@ default:
 
 //: ### Example 2: Switches and Rainbows
 var color = ""
-var wavelength = 568
+var wavelength = 592
 
 switch wavelength {
 case 380...450:
@@ -180,7 +180,7 @@ default:
     color = "not visible"
 }
 //: ### Example 3: No fallthrough in Swift
-let temperature = 55
+let temperature = 81
 switch temperature {
 case 10...55:
     print("Brrr")
