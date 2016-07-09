@@ -153,7 +153,7 @@ class ChattyDog {
 //Solution: 4b & 4c
 var barkingDog = ChattyDog(name:"Kupar", breed:"Schnauser", size: .Medium)
 barkingDog.bark(barkingDog.size)
-ChattyDog.speak(.Medium)
+ChattyDog.speak(.Large)
 //: __Problem 5__
 //:
 //:__5a.__

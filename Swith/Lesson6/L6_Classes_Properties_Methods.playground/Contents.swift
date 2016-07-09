@@ -35,6 +35,7 @@ class MovieArchive {
 // Scroll up to see the Movie class!
 
 var thursdayNightMovie = Movie(title:"Point Break", director:"Kathryn Bigelow", releaseYear: 1991)
+thursdayNightMovie.title
 
 //: ### Type properties & Computed Properties
 
@@ -64,6 +65,8 @@ class KidsMovie {
 
 var fridayNightMovie = KidsMovie(title:"Princess Bride", director:"Rob Reiner", releaseYear: 1987, mpaaRating:"PG", reviewScores:[9, 9.5, 10, 9.5])
 
+fridayNightMovie.metaScore
+
 //: ### Calling Instance Methods
 // Make an array filled with Rob Reiner movies
 var princessBride = Movie(title: "The Princess Bride", director: "Rob Reiner", releaseYear: 1987)
@@ -79,7 +82,7 @@ var firstMovie = movie[0]
 print("\(firstMovie.title)")
 
 //: ### Calling Type methods
-UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary)
+UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera)
 
 
 
