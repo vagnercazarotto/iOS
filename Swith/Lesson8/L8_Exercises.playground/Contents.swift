@@ -19,7 +19,7 @@ enum Level {
     case High
 }
 
-class Teenager {
+class Teenager: Babysitter {
     var age: Int
     let responsible: Bool
     let patience: Level
@@ -29,12 +29,33 @@ class Teenager {
         self.responsible = responsible
         self.patience = patience
     }
+    
+    // methods for Babysitter
+    func playCandyland(numberOfTimes: Int) {
+        var count = 0
+        while count < numberOfTimes{
+            print("we made it to the candy castle!")
+            count += 1
+        }
+    }
+    
+    func read(book: String, firstLine: String, asleep: Bool) -> Bool {
+        print ("of course , we can read \(book) again. \(firstLine)")
+        var isAsleep = asleep
+        isAsleep = true
+        return isAsleep
+    }
 }
 
 protocol Babysitter {
     func playCandyland(numberOfTimes: Int)
     func read(book: String, firstLine: String, asleep: Bool) -> Bool
 }
+
+
+var bestBabysitter = Teenager(age: 15, responsible: true, patience: .High)
+bestBabysitter.playCandyland(15)
+bestBabysitter.read("Little turtle", firstLine: "on the faraway insland", asleep: false)
 
 
 //: __Problem 2__

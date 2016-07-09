@@ -7,15 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A776B8D01D31828A00CDD618 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776B8CF1D31828A00CDD618 /* UIViewExtensions.swift */; };
 		ED649CAB1B3DD6C000D60298 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED649CAA1B3DD6C000D60298 /* AppDelegate.swift */; };
 		ED649CAD1B3DD6C000D60298 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED649CAC1B3DD6C000D60298 /* ViewController.swift */; };
 		ED649CB01B3DD6C000D60298 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED649CAE1B3DD6C000D60298 /* Main.storyboard */; };
 		ED649CB21B3DD6C000D60298 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED649CB11B3DD6C000D60298 /* Images.xcassets */; };
 		ED649CB51B3DD6C000D60298 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED649CB31B3DD6C000D60298 /* LaunchScreen.xib */; };
-		ED649CCB1B3DE8F300D60298 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED649CCA1B3DE8F300D60298 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A776B8CF1D31828A00CDD618 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		ED649CA51B3DD6C000D60298 /* FadeExtensionDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FadeExtensionDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED649CA91B3DD6C000D60298 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED649CAA1B3DD6C000D60298 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -23,7 +24,6 @@
 		ED649CAF1B3DD6C000D60298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED649CB11B3DD6C000D60298 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		ED649CB41B3DD6C000D60298 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		ED649CCA1B3DE8F300D60298 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				ED649CAA1B3DD6C000D60298 /* AppDelegate.swift */,
-				ED649CCA1B3DE8F300D60298 /* UIViewExtensions.swift */,
 				ED649CAC1B3DD6C000D60298 /* ViewController.swift */,
 				ED649CAE1B3DD6C000D60298 /* Main.storyboard */,
 				ED649CB11B3DD6C000D60298 /* Images.xcassets */,
 				ED649CB31B3DD6C000D60298 /* LaunchScreen.xib */,
 				ED649CA81B3DD6C000D60298 /* Supporting Files */,
+				A776B8CF1D31828A00CDD618 /* UIViewExtensions.swift */,
 			);
 			path = FadeExtensionDemo;
 			sourceTree = "<group>";
@@ -147,7 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED649CAD1B3DD6C000D60298 /* ViewController.swift in Sources */,
-				ED649CCB1B3DE8F300D60298 /* UIViewExtensions.swift in Sources */,
+				A776B8D01D31828A00CDD618 /* UIViewExtensions.swift in Sources */,
 				ED649CAB1B3DD6C000D60298 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
