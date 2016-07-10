@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7460FE31D330DD200B0F5B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7460FE21D330DD200B0F5B8 /* AppDelegate.swift */; };
+		A7460FE51D330DD200B0F5B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7460FE41D330DD200B0F5B8 /* ViewController.swift */; };
+		A7460FE81D330DD200B0F5B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7460FE61D330DD200B0F5B8 /* Main.storyboard */; };
+		A7460FEA1D330DD200B0F5B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7460FE91D330DD200B0F5B8 /* Assets.xcassets */; };
+		A7460FED1D330DD200B0F5B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7460FEB1D330DD200B0F5B8 /* LaunchScreen.storyboard */; };
+		A7460FF81D330DD200B0F5B8 /* Click_CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7460FF71D330DD200B0F5B8 /* Click_CounterTests.swift */; };
+		A74610031D330DD200B0F5B8 /* Click_CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74610021D330DD200B0F5B8 /* Click_CounterUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7460FF41D330DD200B0F5B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7460FD71D330DD200B0F5B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7460FDE1D330DD200B0F5B8;
+			remoteInfo = "Click Counter";
+		};
+		A7460FFF1D330DD200B0F5B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7460FD71D330DD200B0F5B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7460FDE1D330DD200B0F5B8;
+			remoteInfo = "Click Counter";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A7460FDF1D330DD200B0F5B8 /* Click Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Click Counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7460FE21D330DD200B0F5B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7460FE41D330DD200B0F5B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7460FE71D330DD200B0F5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7460FE91D330DD200B0F5B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7460FEC1D330DD200B0F5B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7460FEE1D330DD200B0F5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7460FF31D330DD200B0F5B8 /* Click CounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Click CounterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7460FF71D330DD200B0F5B8 /* Click_CounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_CounterTests.swift; sourceTree = "<group>"; };
+		A7460FF91D330DD200B0F5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7460FFE1D330DD200B0F5B8 /* Click CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Click CounterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A74610021D330DD200B0F5B8 /* Click_CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Click_CounterUITests.swift; sourceTree = "<group>"; };
+		A74610041D330DD200B0F5B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7460FDC1D330DD200B0F5B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7460FF01D330DD200B0F5B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7460FFB1D330DD200B0F5B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7460FD61D330DD200B0F5B8 = {
+			isa = PBXGroup;
+			children = (
+				A7460FE11D330DD200B0F5B8 /* Click Counter */,
+				A7460FF61D330DD200B0F5B8 /* Click CounterTests */,
+				A74610011D330DD200B0F5B8 /* Click CounterUITests */,
+				A7460FE01D330DD200B0F5B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7460FE01D330DD200B0F5B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7460FDF1D330DD200B0F5B8 /* Click Counter.app */,
+				A7460FF31D330DD200B0F5B8 /* Click CounterTests.xctest */,
+				A7460FFE1D330DD200B0F5B8 /* Click CounterUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7460FE11D330DD200B0F5B8 /* Click Counter */ = {
+			isa = PBXGroup;
+			children = (
+				A7460FE21D330DD200B0F5B8 /* AppDelegate.swift */,
+				A7460FE41D330DD200B0F5B8 /* ViewController.swift */,
+				A7460FE61D330DD200B0F5B8 /* Main.storyboard */,
+				A7460FE91D330DD200B0F5B8 /* Assets.xcassets */,
+				A7460FEB1D330DD200B0F5B8 /* LaunchScreen.storyboard */,
+				A7460FEE1D330DD200B0F5B8 /* Info.plist */,
+			);
+			path = "Click Counter";
+			sourceTree = "<group>";
+		};
+		A7460FF61D330DD200B0F5B8 /* Click CounterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7460FF71D330DD200B0F5B8 /* Click_CounterTests.swift */,
+				A7460FF91D330DD200B0F5B8 /* Info.plist */,
+			);
+			path = "Click CounterTests";
+			sourceTree = "<group>";
+		};
+		A74610011D330DD200B0F5B8 /* Click CounterUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A74610021D330DD200B0F5B8 /* Click_CounterUITests.swift */,
+				A74610041D330DD200B0F5B8 /* Info.plist */,
+			);
+			path = "Click CounterUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7460FDE1D330DD200B0F5B8 /* Click Counter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A74610071D330DD200B0F5B8 /* Build configuration list for PBXNativeTarget "Click Counter" */;
+			buildPhases = (
+				A7460FDB1D330DD200B0F5B8 /* Sources */,
+				A7460FDC1D330DD200B0F5B8 /* Frameworks */,
+				A7460FDD1D330DD200B0F5B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Click Counter";
+			productName = "Click Counter";
+			productReference = A7460FDF1D330DD200B0F5B8 /* Click Counter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7460FF21D330DD200B0F5B8 /* Click CounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A746100A1D330DD200B0F5B8 /* Build configuration list for PBXNativeTarget "Click CounterTests" */;
+			buildPhases = (
+				A7460FEF1D330DD200B0F5B8 /* Sources */,
+				A7460FF01D330DD200B0F5B8 /* Frameworks */,
+				A7460FF11D330DD200B0F5B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7460FF51D330DD200B0F5B8 /* PBXTargetDependency */,
+			);
+			name = "Click CounterTests";
+			productName = "Click CounterTests";
+			productReference = A7460FF31D330DD200B0F5B8 /* Click CounterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7460FFD1D330DD200B0F5B8 /* Click CounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A746100D1D330DD200B0F5B8 /* Build configuration list for PBXNativeTarget "Click CounterUITests" */;
+			buildPhases = (
+				A7460FFA1D330DD200B0F5B8 /* Sources */,
+				A7460FFB1D330DD200B0F5B8 /* Frameworks */,
+				A7460FFC1D330DD200B0F5B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A74610001D330DD200B0F5B8 /* PBXTargetDependency */,
+			);
+			name = "Click CounterUITests";
+			productName = "Click CounterUITests";
+			productReference = A7460FFE1D330DD200B0F5B8 /* Click CounterUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7460FD71D330DD200B0F5B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "vagner cazarotto";
+				TargetAttributes = {
+					A7460FDE1D330DD200B0F5B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A7460FF21D330DD200B0F5B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7460FDE1D330DD200B0F5B8;
+					};
+					A7460FFD1D330DD200B0F5B8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A7460FDE1D330DD200B0F5B8;
+					};
+				};
+			};
+			buildConfigurationList = A7460FDA1D330DD200B0F5B8 /* Build configuration list for PBXProject "Click Counter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7460FD61D330DD200B0F5B8;
+			productRefGroup = A7460FE01D330DD200B0F5B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7460FDE1D330DD200B0F5B8 /* Click Counter */,
+				A7460FF21D330DD200B0F5B8 /* Click CounterTests */,
+				A7460FFD1D330DD200B0F5B8 /* Click CounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7460FDD1D330DD200B0F5B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7460FED1D330DD200B0F5B8 /* LaunchScreen.storyboard in Resources */,
+				A7460FEA1D330DD200B0F5B8 /* Assets.xcassets in Resources */,
+				A7460FE81D330DD200B0F5B8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7460FF11D330DD200B0F5B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7460FFC1D330DD200B0F5B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7460FDB1D330DD200B0F5B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7460FE51D330DD200B0F5B8 /* ViewController.swift in Sources */,
+				A7460FE31D330DD200B0F5B8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7460FEF1D330DD200B0F5B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7460FF81D330DD200B0F5B8 /* Click_CounterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7460FFA1D330DD200B0F5B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74610031D330DD200B0F5B8 /* Click_CounterUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7460FF51D330DD200B0F5B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7460FDE1D330DD200B0F5B8 /* Click Counter */;
+			targetProxy = A7460FF41D330DD200B0F5B8 /* PBXContainerItemProxy */;
+		};
+		A74610001D330DD200B0F5B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7460FDE1D330DD200B0F5B8 /* Click Counter */;
+			targetProxy = A7460FFF1D330DD200B0F5B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7460FE61D330DD200B0F5B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7460FE71D330DD200B0F5B8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7460FEB1D330DD200B0F5B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7460FEC1D330DD200B0F5B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A74610051D330DD200B0F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A74610061D330DD200B0F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A74610081D330DD200B0F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Click Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkcode.Click-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A74610091D330DD200B0F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Click Counter/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkcode.Click-Counter";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A746100B1D330DD200B0F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Click CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkcode.Click-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Click Counter.app/Click Counter";
+			};
+			name = Debug;
+		};
+		A746100C1D330DD200B0F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Click CounterTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkcode.Click-CounterTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Click Counter.app/Click Counter";
+			};
+			name = Release;
+		};
+		A746100E1D330DD200B0F5B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Click CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkcode.Click-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Click Counter";
+			};
+			name = Debug;
+		};
+		A746100F1D330DD200B0F5B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Click CounterUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tkcode.Click-CounterUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Click Counter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7460FDA1D330DD200B0F5B8 /* Build configuration list for PBXProject "Click Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74610051D330DD200B0F5B8 /* Debug */,
+				A74610061D330DD200B0F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A74610071D330DD200B0F5B8 /* Build configuration list for PBXNativeTarget "Click Counter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A74610081D330DD200B0F5B8 /* Debug */,
+				A74610091D330DD200B0F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A746100A1D330DD200B0F5B8 /* Build configuration list for PBXNativeTarget "Click CounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A746100B1D330DD200B0F5B8 /* Debug */,
+				A746100C1D330DD200B0F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A746100D1D330DD200B0F5B8 /* Build configuration list for PBXNativeTarget "Click CounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A746100E1D330DD200B0F5B8 /* Debug */,
+				A746100F1D330DD200B0F5B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7460FD71D330DD200B0F5B8 /* Project object */;
+}
