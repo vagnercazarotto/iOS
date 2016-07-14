@@ -12,9 +12,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var colorView: UIView!
     
-    @IBOutlet weak var redControl: UISwitch!
-    @IBOutlet weak var greenControl: UISwitch!
-    @IBOutlet weak var blueControl: UISwitch!
+    @IBOutlet weak var redControl: UISlider!
+    @IBOutlet weak var greenControl: UISlider!
+    @IBOutlet weak var blueControl: UISlider!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,11 +30,14 @@ class ViewController: UIViewController {
             return
         }
         
-        let r: CGFloat = self.redControl.on ? 1 : 0
-        let g: CGFloat = self.greenControl.on ? 1 : 0
-        let b: CGFloat = self.blueControl.on ? 1 : 0
+        let r: Float = self.redControl.value
+        let cgfr: CGFloat = CGFloat(r)
+        let g: Float = self.greenControl.value
+        let cgfg: CGFloat = CGFloat(g)
+        let b: Float = self.blueControl.value
+        let cgfb: CGFloat = CGFloat(b)
                 
-        colorView.backgroundColor = UIColor(red: r, green: g, blue: b, alpha: 1)
+        colorView.backgroundColor = UIColor(red: cgfr, green: cgfg, blue: cgfb, alpha: 1)
     }
 }
 
