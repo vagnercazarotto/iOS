@@ -24,9 +24,24 @@ class ViewController: UIViewController {
     @IBAction func experiment(){
         print("Button pressed")
         
-        let nextController = UIImagePickerController()
+//        let image = UIImage()
+//        let controler = UIActivityViewController(activityItems: [image], applicationActivities: nil)
+//        self.presentViewController(controler, animated: true, completion: nil)
         
-        self.presentViewController(nextController, animated: true, completion: nil)
+        
+        let controller = UIAlertController()
+        controller.title = "title for alert controller"
+        controller.message = "This is a test"
+        
+        // clojure expression to pass methods as argument  
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default) { action in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }
+        
+        controller.addAction(okAction)
+        
+        self.presentViewController(controller, animated: true, completion: nil)
+//        self.dismissViewControllerAnimated(true, completion: nil)
         
     }
     
