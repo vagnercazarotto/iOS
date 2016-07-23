@@ -20,6 +20,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     let emojiDelegate = EmojiTextFieldDelegate()
     let colorizerDelegate = ColorizerTextFieldDelegate()
     let customDelegate = RamdomColorTextFieldDelegate()
+    let zipDelegate = ZipCodeTextFieldDelegate()
+    let cashDelegate = CashTextFieldDelegate()
     
     // Life Cycle Methods
     
@@ -30,8 +32,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.characterCountLabel.hidden = true
         
         // Set the three delegates
-        self.textField1.delegate = colorizerDelegate
-        self.textField2.delegate = emojiDelegate
+        self.textField1.delegate = zipDelegate
+        self.textField2.delegate = cashDelegate
         self.textField3.delegate = customDelegate
     }
 
