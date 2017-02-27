@@ -39,7 +39,10 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlq-5y-g2e">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="77.5" y="0.0" width="220" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="gSB-33-7sx"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -51,12 +54,11 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eIP-yb-g9p" secondAttribute="bottom" id="PTj-0a-FiU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xy6-sL-GIw" secondAttribute="bottom" id="Sau-C4-Hpm"/>
                             <constraint firstItem="wBM-4P-DT8" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WFY-hC-FY0"/>
-                            <constraint firstAttribute="trailing" secondItem="zlq-5y-g2e" secondAttribute="trailing" id="adT-KT-yiG"/>
                             <constraint firstAttribute="trailing" secondItem="xy6-sL-GIw" secondAttribute="trailing" id="iiu-gb-een"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zlq-5y-g2e" secondAttribute="bottom" id="nYb-dO-C5D"/>
+                            <constraint firstItem="zlq-5y-g2e" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="stS-Py-zaF"/>
                             <constraint firstItem="eIP-yb-g9p" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="wW5-7n-0kF"/>
                             <constraint firstItem="wBM-4P-DT8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="y2U-jU-d1S"/>
-                            <constraint firstItem="zlq-5y-g2e" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yW6-jn-P7y"/>
                         </constraints>
                     </view>
                     <connections>
