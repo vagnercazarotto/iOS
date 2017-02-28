@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A72808AD1E65FA32004EAF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72808AC1E65FA32004EAF90 /* AppDelegate.swift */; };
-		A72808AF1E65FA32004EAF90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72808AE1E65FA32004EAF90 /* ViewController.swift */; };
+		A72808AF1E65FA32004EAF90 /* LogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72808AE1E65FA32004EAF90 /* LogVC.swift */; };
 		A72808B21E65FA32004EAF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72808B01E65FA32004EAF90 /* Main.storyboard */; };
 		A72808B41E65FA32004EAF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72808B31E65FA32004EAF90 /* Assets.xcassets */; };
 		A72808B71E65FA32004EAF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72808B51E65FA32004EAF90 /* LaunchScreen.storyboard */; };
+		A72808BF1E65FC8D004EAF90 /* MusicListVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72808BE1E65FC8D004EAF90 /* MusicListVCViewController.swift */; };
+		A72808C31E66043E004EAF90 /* PlaySongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72808C21E66043E004EAF90 /* PlaySongViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A72808A91E65FA32004EAF90 /* SwapingScreens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwapingScreens.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A72808AC1E65FA32004EAF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A72808AE1E65FA32004EAF90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A72808AE1E65FA32004EAF90 /* LogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogVC.swift; sourceTree = "<group>"; };
 		A72808B11E65FA32004EAF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A72808B31E65FA32004EAF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A72808B61E65FA32004EAF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A72808B81E65FA32004EAF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A72808BE1E65FC8D004EAF90 /* MusicListVCViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicListVCViewController.swift; sourceTree = "<group>"; };
+		A72808C21E66043E004EAF90 /* PlaySongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySongViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				A72808AC1E65FA32004EAF90 /* AppDelegate.swift */,
-				A72808AE1E65FA32004EAF90 /* ViewController.swift */,
+				A72808AE1E65FA32004EAF90 /* LogVC.swift */,
+				A72808BE1E65FC8D004EAF90 /* MusicListVCViewController.swift */,
+				A72808C21E66043E004EAF90 /* PlaySongViewController.swift */,
 				A72808B01E65FA32004EAF90 /* Main.storyboard */,
 				A72808B31E65FA32004EAF90 /* Assets.xcassets */,
 				A72808B51E65FA32004EAF90 /* LaunchScreen.storyboard */,
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72808AF1E65FA32004EAF90 /* ViewController.swift in Sources */,
+				A72808AF1E65FA32004EAF90 /* LogVC.swift in Sources */,
+				A72808BF1E65FC8D004EAF90 /* MusicListVCViewController.swift in Sources */,
 				A72808AD1E65FA32004EAF90 /* AppDelegate.swift in Sources */,
+				A72808C31E66043E004EAF90 /* PlaySongViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
